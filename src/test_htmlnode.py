@@ -22,4 +22,5 @@ class TestHTMLNode(unittest.TestCase):
         self.assertNotEqual(node3.tag, node2.tag)
 
     def test_props_to_html(self):
-        print(f'node3.props_to_html:{node3.props_to_html()}')
+        answer = node3.props_to_html()
+        #print(f'testing props_to_html...\nnode3.props_to_html:{answer}')

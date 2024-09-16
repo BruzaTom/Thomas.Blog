@@ -34,5 +34,7 @@ class TestParentNode(unittest.TestCase):
         self.assertNotEqual(node3.tag, node2.tag)
 
     def test_to_html(self):
-        print(f'parent.to_html:{parent.to_html()}')
-        print(f'parent2.to_html:{parent2.to_html()}')
+        answer1 = parent.to_html()
+        answer2 = parent2.to_html()
+        #print(f'parent.to_html:{answer1}')
+        #print(f'parent2.to_html:{answer2}')

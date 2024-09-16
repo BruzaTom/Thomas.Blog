@@ -21,4 +21,5 @@ class TestLeafNode(unittest.TestCase):
         self.assertNotEqual(node3.tag, node2.tag)
 
     def test_to_html(self):
-        print(f'node3.to_html:{node2.to_html()}')
+        answer = node2.to_html()
+        #print(f'node3.to_html:{answer}')
