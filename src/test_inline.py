@@ -1,7 +1,9 @@
 import unittest
+import re
 
-from inline import split_nodes_delimiter, extract_markdown_links, extract_markdown_images, split_nodes_image, split_nodes_link
+from inline import split_nodes_delimiter, extract_markdown_links, extract_markdown_images, split_nodes_image, split_nodes_link, text_to_textnodes
 from textnode import TextNode
+
 
 node = TextNode('This is text with a **bold** word', 'bold')
 node2 = TextNode('This is text with a *italic* word', 'italic')
@@ -48,11 +50,17 @@ class Testsplit_nodes_delimiter(unittest.TestCase):
             'text',
         )
         new_nodes = split_nodes_link([node, node2])
-        print(f'\ntesting split_nodes_link...\ntext:{text}\ntext2:{text2}\nresult:{split_nodes_link([node, node2])}')
+        #print(f'\ntesting split_nodes_link...\ntext:{text}\ntext2:{text2}\nresult:{split_nodes_link([node, node2])}')
 
     def test_split_nodes_image(self):
         text = "This is text with a ![rick roll](https://i.imgur.com/aKaOqIh.gif) and ![obi wan](https://i.imgur.com/fJRm4Vk.jpeg)"
         node = TextNode(text, 'text',)
-        print(f'\ntesting split_nodes_image...\ntext:{text}\nresult:{split_nodes_image([node])}')
+        #print(f'\ntesting split_nodes_image...\ntext:{text}\nresult:{split_nodes_image([node])}')
+        
+    def test_text_to_textnodes(self):
+        text = 'This is **text** with an *italic* word and a `code block` and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev)'
+        text2 = 'this is a [big link](www.wow.com) with a bigger ![image](fatfart.url)'
+        #print(f'\ntesting text_to_textnodes...\ntext:{text}\nresult:{text_to_textnodes(text)}')
+
 
 
