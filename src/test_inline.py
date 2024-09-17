@@ -1,6 +1,6 @@
 import unittest
 
-from inline import split_nodes_delimiter, extract_markdown_links, extract_markdown_images
+from inline import split_nodes_delimiter, extract_markdown_links, extract_markdown_images, split_nodes_image, split_nodes_link
 from textnode import TextNode
 
 node = TextNode('This is text with a **bold** word', 'bold')
@@ -38,5 +38,21 @@ class Testsplit_nodes_delimiter(unittest.TestCase):
         text = "This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"
         #print(f'\ntesting extract_markdown_links...\ntext:{text}\nresult:{extract_markdown_links(text)}')
         # [("to boot dev", "https://www.boot.dev"), ("to youtube", "https://www.youtube.com/@bootdotdev")]
+
+    def test_split_nodes_link(self):
+        text2 = "This is text with a [rick roll](https://i.imgur.com/aKaOqIh.gif) and [obi wan](https://i.imgur.com/fJRm4Vk.jpeg)"
+        node2 = TextNode(text2, 'text',)
+        text = "This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"
+        node = TextNode(
+            text,
+            'text',
+        )
+        new_nodes = split_nodes_link([node, node2])
+        print(f'\ntesting split_nodes_link...\ntext:{text}\ntext2:{text2}\nresult:{split_nodes_link([node, node2])}')
+
+    def test_split_nodes_image(self):
+        text = "This is text with a ![rick roll](https://i.imgur.com/aKaOqIh.gif) and ![obi wan](https://i.imgur.com/fJRm4Vk.jpeg)"
+        node = TextNode(text, 'text',)
+        print(f'\ntesting split_nodes_image...\ntext:{text}\nresult:{split_nodes_image([node])}')
 
 
