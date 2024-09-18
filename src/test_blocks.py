@@ -1,5 +1,5 @@
 import unittest
-from blocks import markdown_to_blocks, block_to_block_type
+from blocks import markdown_to_blocks, block_to_block_type, markdown_to_html_node
 
 def getText(path):
     with open(path) as f:
@@ -19,4 +19,7 @@ class Test_blocks(unittest.TestCase):
         blocktypes = []
         for block in blocks:
             blocktypes.append(block_to_block_type(block))
-        print(f'\ntesting block_to_block_type...\ntext:\n{text}\nresult:\n{blocktypes}')
+        #print(f'\ntesting block_to_block_type...\ntext:\n{text}\nresult:\n{blocktypes}')
+
+    def test_markdown_to_html_node(self):
+        print(f'\ntesting markdown_to_html_node...\ntext:\n{text}\nresult:\n{markdown_to_html_node(text)}')

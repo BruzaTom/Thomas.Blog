@@ -89,7 +89,7 @@ def split_nodes_image(old_nodes):
 
 def text_to_textnodes(text):
     nodes_list = []
-    init = TextNode(text, None)
+    init = TextNode(f'"{text}"', '"text"')
     nodes_list = split_nodes_delimiter([init], '**', 'bold')
     nodes_list = split_nodes_delimiter(nodes_list, '*', 'italic')
     nodes_list = split_nodes_delimiter(nodes_list, '`', 'code')
