@@ -4,17 +4,35 @@ import shutil
 
 def main():
     path = 'static'
-    print({'public': get_dir(path)},'\n')
-    print(get_list(path))
+    #print({'public': get_dir(path)},'\n')
+    #print(get_list(path))
+    files = []
+    for file in get_list(path):
+        files.extend(file)
+
+    #print(files)
+
+    update_dir(path, 'public', get_dir(path), files)
+    
 
 
 
-def update_dir(path, tree):
+
+def update_dir(old_path, path, tree, files):
     if os.path.exists(path):
         shutil.rmtree(path)
+    def make_dir(path, tree, files):
+        os.mkdir(path)
+        t = 0
+        for node in tree:
+            if tree[node] == None:
+                shutil.copy(files[t], os.path.join(path, node))
+                t += 1
+                files = files[t:]
+            else:
+                make_dir(os.path.join(path, node), tree[node], files)
     for node in tree:
-        if tree[node] != None:
-            os.mkdir(node)
+        make_dir(path, tree, files)
     
 
 def get_dir(path):
