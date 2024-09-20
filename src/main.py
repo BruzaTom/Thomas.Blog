@@ -1,6 +1,7 @@
 from textnode import TextNode
 import os
 import shutil
+from check_curuption import check_curr
 
 def main():
     path = 'static'
@@ -10,29 +11,24 @@ def main():
     for file in get_list(path):
         files.extend(file)
 
-    #print(files)
+    print(files)
 
-    update_dir(path, 'public', get_dir(path), files)
+    update_dir('public', get_dir(path), files)
     
 
 
-
-
-def update_dir(old_path, path, tree, files):
+def update_dir(path, tree, files):
     if os.path.exists(path):
         shutil.rmtree(path)
-    def make_dir(path, tree, files):
-        os.mkdir(path)
-        t = 0
-        for node in tree:
-            if tree[node] == None:
-                shutil.copy(files[t], os.path.join(path, node))
-                t += 1
-                files = files[t:]
-            else:
-                make_dir(os.path.join(path, node), tree[node], files)
+    os.mkdir(path)
+    t=0
     for node in tree:
-        make_dir(path, tree, files)
+        if tree[node] == None:
+            shutil.copy2(files[t], os.path.join(path, node))
+            t += 1
+            files = files[t:]
+        else:
+            update_dir(os.path.join(path, node), tree[node], files)
     
 
 def get_dir(path):
