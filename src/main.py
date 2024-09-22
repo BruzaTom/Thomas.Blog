@@ -18,30 +18,35 @@ def updateData(text, file):
 def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
     template = getText(template_path)
     content_tree = get_dir(dir_path_content)
-    static_tree = get_dir('static')
-    static_tree.update(content_tree)
-    static_files = get_list('static')
+    #static_tree = get_dir('static')
+    #static_tree.update(content_tree)
+    #static_files = get_list('static')
     content_files = get_list(dir_path_content)
-    static_files.extend(content_files)
+    #static_files.extend(content_files)
     files = []
-    for file in static_files:
+    for file in content_files:
         files.extend(file)
     print(files)
     
-    update_dir(dest_dir_path, static_tree, files)
-    content_paths = []
-    for file in content_files:
-        content_paths.extend(file)
-    for i in range(0, len(content_paths)):
+    update_dir(dest_dir_path, content_tree, files)
+    for i in range(0, len(files)):
         template = getText(template_path)
-        md = getText(content_paths[i])
-        title = extract_title(content_paths[i])
+        md = getText(files[i])
+        title = extract_title(files[i])
         html = markdown_to_html_node(md)
         htmlstring = html.to_html()
         html_page = getText(template_path).replace('{{ Title }}', title)
         html_page = html_page.replace('{{ Content }}', htmlstring)
-        path = content_paths[i].replace('md', 'html')
-        updateData(html_page, path.replace(dir_path_content, dest_dir_path))
+        path = files[i].replace('md', 'html')
+        print(f'topath:{path.replace(dir_path_content, dest_dir_path)}')
+        md_to_html_path = path.replace(dir_path_content, dest_dir_path)
+        updateData(html_page, md_to_html_path)
+        root_path = ''.join(md_to_html_path.split('/')[1:]) #remove  'public/' from public/index3.html
+        text = getText(path.replace(dir_path_content, dest_dir_path))
+        if os.path.exists(root_path): #else place from public
+            updateData(text, root_path)
+        else:
+            raise Exception(f'there is no path {root_path} in root...')
 
 def getText(path):
     with open(path) as f:
