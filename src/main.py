@@ -27,6 +27,7 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
     files = []
     for file in static_files:
         files.extend(file)
+    print(files)
     
     update_dir(dest_dir_path, static_tree, files)
     content_paths = []
@@ -65,14 +66,14 @@ def update_dir(path, tree, files):
         if tree[node] == None:
             if (t+1) > len(files):
                 shutil.copy2('md.md', os.path.join(path, node))
-            if node[len(node)-2:] == 'md':
+            if (node[len(node)-2:] == 'md'):
                 shutil.copy2(files[t], os.path.join(path, node.replace('md', 'html')))
-                t += 1
                 files = files[t:]
             else:
                 shutil.copy2(files[t], os.path.join(path, node))
-                t += 1
+                
                 files = files[t:]
+            t += 1
         else:
             update_dir(os.path.join(path, node), tree[node], files)
     
