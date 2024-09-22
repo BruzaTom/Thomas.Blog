@@ -1,6 +1,6 @@
 # Tolkien Fan Club
 
-**I like Tolkien**. Read my [first post here](/majesty)
+**I like Tolkien**. Read my [first post here](public/majesty/index3.html)
 
 > All that is gold does not glitter
 
