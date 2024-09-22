@@ -6,10 +6,9 @@ from blocks import *
 
 def main():
     path = 'static'
-    #print({'public': get_dir(path)},'\n')
-    #print(get_list(path))
+
+    #index2.md is moved to content and generates a index2.html file in public, then index2.html is placed in root and renamed index.html
     
-    #generate_page('content/index.md', 'template.html', 'public/index.html')
     generate_pages_recursive('content', 'template.html', 'public')
 
 def updateData(text, file):

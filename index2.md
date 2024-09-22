@@ -1,6 +1,6 @@
 # Welcome
 
-**Here is my work**. [Blogs](/content)
+**Here is my work**. [Blogs](/public)
 
 > Winners embrace hard work. They love the discipline of it, the trade-off they’re making to win. Losers, on the other hand, see it as punishment. And that’s the difference.
 
