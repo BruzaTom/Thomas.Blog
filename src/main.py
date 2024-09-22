@@ -8,15 +8,13 @@ def main():
     path = 'static'
     #print({'public': get_dir(path)},'\n')
     #print(get_list(path))
-    files = []
-    for file in get_list(path):
-        files.extend(file)
-
-    print(files)
-
-    update_dir('public', get_dir(path), files)
     
-    generate_page('static/content/index.md', 'template.html', 'public/content/index.html')
+    
+    generate_page('content/index.md', 'template.html', 'public/index.html')
+
+def updateData(text, file):
+    with open(file, "w") as f:
+        f.write(text)
 
 def generate_page(from_path, template_path, dest_path):
     print(f'generating page from {from_path}, to {dest_path}, using {template_path}')
@@ -25,11 +23,19 @@ def generate_page(from_path, template_path, dest_path):
     title = extract_title(from_path)
     html = markdown_to_html_node(md)
     htmlstring = html.to_html()
-    print(htmlstring)
+    html_page = getText(template_path).replace('{{ Title }}', title)
+    html_page = html_page.replace('{{ Content }}', htmlstring)
+    tree = get_dir('static')
+    tree[dest_path.split('/')[-1]] = None
+    files = []
+    for file in get_list('static'):
+        files.extend(file)
+    update_dir(dest_path.split('/')[0], tree, files)
+    updateData(html_page, dest_path)
 
 def getText(path):
     with open(path) as f:
-        file_contents = f.read() #f.read() turns book text into long string
+        file_contents = f.read()
     return file_contents    
 
 def extract_title(markdown):
@@ -46,9 +52,12 @@ def update_dir(path, tree, files):
     t=0
     for node in tree:
         if tree[node] == None:
-            shutil.copy2(files[t], os.path.join(path, node))
-            t += 1
-            files = files[t:]
+            if (t+1) > len(files):
+                shutil.copy2('md.md', os.path.join(path, node))
+            else:
+                shutil.copy2(files[t], os.path.join(path, node))
+                t += 1
+                files = files[t:]
         else:
             update_dir(os.path.join(path, node), tree[node], files)
     
