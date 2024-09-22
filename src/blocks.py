@@ -57,7 +57,7 @@ def block_to_block_type(block):
 def text_to_children(text):#the text has not been stripped of ````
     if block_to_block_type(text) == 'pre':
         text = strip(text)
-        return TextNode(f'"{text}"', '"code"')
+        return [TextNode(f'{text}', 'code')]
     else:
         return text_to_textnodes(text)
     
@@ -107,16 +107,10 @@ def markdown_to_html_node(markdown):
     for i in range(0, len(blocks)):
         if blocktypes[i] != 'pre':
             blocks[i] = strip(blocks[i])
-        parentNodes.append(ParentNode(f'"{blocktypes[i]}"', text_to_children(blocks[i])))
-    return HTMLNode(tag='"div"', children=parentNodes)
+        parentNodes.append(ParentNode(f'{blocktypes[i]}', text_to_children(blocks[i])))
+    return ParentNode(tag='div', children=parentNodes)
 
 def getText(path):
     with open(path) as f:
         file_contents = f.read() #f.read() turns book text into long string
     return file_contents
-path = 'md.md'
-text = getText(path)
-blocks = markdown_to_blocks(text)
-blocktypes = []
-htmlblocks = markdown_to_html_node(text)
-#print(htmlblocks)

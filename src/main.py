@@ -2,6 +2,7 @@ from textnode import TextNode
 import os
 import shutil
 from check_curuption import check_curr
+from blocks import *
 
 def main():
     path = 'static'
@@ -15,7 +16,28 @@ def main():
 
     update_dir('public', get_dir(path), files)
     
+    generate_page('static/content/index.md', 'template.html', 'public/content/index.html')
 
+def generate_page(from_path, template_path, dest_path):
+    print(f'generating page from {from_path}, to {dest_path}, using {template_path}')
+    template = getText(template_path)
+    md = getText(from_path)
+    title = extract_title(from_path)
+    html = markdown_to_html_node(md)
+    htmlstring = html.to_html()
+    print(htmlstring)
+
+def getText(path):
+    with open(path) as f:
+        file_contents = f.read() #f.read() turns book text into long string
+    return file_contents    
+
+def extract_title(markdown):
+    text = getText(markdown)    
+    blocks = markdown_to_blocks(text)
+    for block in blocks:
+        if block_to_block_type(block) == 'h1':
+            return strip(block)
 
 def update_dir(path, tree, files):
     if os.path.exists(path):
