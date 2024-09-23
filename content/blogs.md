@@ -4,7 +4,7 @@
 
 [PROJECT DIRECTORY](index2.html)
 
-[Donotion's](donate.html)
+[Support My Work](donate.html)
 
 #### sep,22,2024
 
