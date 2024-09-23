@@ -4,6 +4,8 @@
 
 [PROJECT DIRECTORY](index2.html)
 
+[Donotion's](donate.html)
+
 #### sep,22,2024
 
 Wow check out this amazing interviw with Brian Kernighan and Lex Fridman! What insights into the industry.. [youtube](https://www.youtube.com/watch?v=G1-wse8nsxY&t=3s)
