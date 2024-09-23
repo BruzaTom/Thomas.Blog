@@ -6,5 +6,6 @@
 
 1. [PLANNER](index3.html)
 2. [ASTEROIDS](asteroids.html)
+3. [STATIC SITE GENERATOR](ssg.html)
 
 ![term.gif](static/images/gifs/terminal.gif)
