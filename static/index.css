@@ -20,6 +20,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
     color: #48cd94;
     margin-top: 24px;
     margin-bottom: 16px;
@@ -87,11 +88,13 @@ blockquote {
     padding-bottom: 0.5em;
     padding-right: 0.5em;
     color: #8b949e;
-    text-align: center;
 }
 
 img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

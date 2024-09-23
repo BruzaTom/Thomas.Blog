@@ -1,17 +1,21 @@
-# Welcome To My Website!
+# Thomas' Website
 
-# Thomas Gomez
+###### Links
 
-> [linkedin.com/in/thomasgomez77,](https://www.linkedin.com/in/thomasgomez77) [github.com/BruzaTom](https://github.com/BruzaTom)
+* [thomasagomez77@gmail.com,](https://www.gmail.com)
+* [linkedin.com/in/thomasgomez77,](https://www.linkedin.com/in/thomasgomez77)
+* [github.com/BruzaTom](https://github.com/BruzaTom)
+
+###### Site Links
 
 * [PROJECT DOCS](index2.html)
 * [BLOGS](blogs.html)
 
 ## About Me
 
-I will will this in a little *later*.. For now heres a pic of me and my lovely daughter!
+* I will fill this in a little *later*.. For now heres a pic of me and my lovely daughter!
 
-![pic of me and autumn](static/images/meandautumn.jpg)
+![pic of me and autumn](static/images/meandautumn_rs.jpg)
 
 ## Why I Love Programming
 
