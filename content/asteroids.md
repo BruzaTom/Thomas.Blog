@@ -6,4 +6,4 @@
 
 ## Asteroids
 
-![asteroids pic](static/images/asteroids.png)
+![asteroids pic](static/images/gifs/asteroids_gif.gif)
