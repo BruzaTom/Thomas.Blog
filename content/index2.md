@@ -1,8 +1,10 @@
-# Tolkien Fan Club
+# PROJECT DIRECTORY
 
 [Back Home](index.html)
 
-**I like Tolkien**. Read my [first post here](index3.html)
+Here is a list of my `project docs`.
+
+[PROJECT 1](index3.html)
 
 > All that is gold does not glitter
 
