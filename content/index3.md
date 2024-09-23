@@ -1,8 +1,12 @@
-# The Unparalleled Majesty of "The Lord of the Rings"
+# Thomas' Projects
 
-[Back Home](index.html)
+[HOME](index.html)
 
-![LOTR image artistmonkeys](static/images/rivendell.png)
+[PROJECT DIRECTORY](index2.html)
+
+## The Planner
+
+![planner pic](static/images/planner.png)
 
 > "I cordially dislike allegory in all its manifestations, and always have done so since I grew old and wary enough to detect its presence.
 > I much prefer history, true or feigned, with its varied applicability to the thought and experience of readers.

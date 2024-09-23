@@ -1,15 +1,21 @@
-# Welcome
+# Welcome To My Blog Page
 
-**Here is my work**. [Blogs](/public)
+# Thomas Gomez
 
-> Winners embrace hard work. They love the discipline of it, the trade-off they’re making to win. Losers, on the other hand, see it as punishment. And that’s the difference.
+**Here is my work**. [PROJECT DIRECTORY](index2.html)
 
-## Reasons I Program
+## About Me
+
+![pic of me and autumn](static/images/meandautumn.jpg)
+
+## Why I Love Programming
 
 * I love the challenges and solving problems.
 * Hopfully in time my work will be recognized.
-* AI *didn't ruin it*.
+* Financial stability (ofcource).
 * It keeps me very busy.
+
+> "C is quirky, flawed, and an enormous success." - Dennis Ritchie
 
 ## My favorite characters (in order)
 

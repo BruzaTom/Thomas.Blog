@@ -16,6 +16,7 @@ def updateData(text, file):
         f.write(text)
 
 def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
+    print(f'updating {dest_dir_path} with files in {dir_path_content} using {template_path}...')
     template = getText(template_path)
     content_tree = get_dir(dir_path_content)
     #static_tree = get_dir('static')
@@ -26,7 +27,7 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
     files = []
     for file in content_files:
         files.extend(file)
-    print(files)
+    print(f'\t files grabbed:{files}')
     
     update_dir(dest_dir_path, content_tree, files)
     for i in range(0, len(files)):
@@ -37,9 +38,10 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
         htmlstring = html.to_html()
         html_page = getText(template_path).replace('{{ Title }}', title)
         html_page = html_page.replace('{{ Content }}', htmlstring)
+        html_page = html_page.replace('<li></li>', '') #bugg
         path = files[i].replace('md', 'html')
-        print(f'topath:{path.replace(dir_path_content, dest_dir_path)}')
         md_to_html_path = path.replace(dir_path_content, dest_dir_path)
+        print(f'\t\tupdating {md_to_html_path} with HTML generated from {files[i]}..')
         updateData(html_page, md_to_html_path)
         root_path = ''.join(md_to_html_path.split('/')[1:]) #remove  'public/' from public/index3.html
         text = getText(path.replace(dir_path_content, dest_dir_path))
@@ -61,25 +63,13 @@ def extract_title(markdown):
             return strip(block)
 
 def update_dir(path, tree, files):
-    print(tree)
     if os.path.exists(path):
         shutil.rmtree(path)
     os.mkdir(path)
     t=0
     for node in tree:
-        if tree[node] == None:
-            if (t+1) > len(files):
-                shutil.copy2('md.md', os.path.join(path, node))
-            if (node[len(node)-2:] == 'md'):
-                shutil.copy2(files[t], os.path.join(path, node.replace('md', 'html')))
-                files = files[t:]
-            else:
-                shutil.copy2(files[t], os.path.join(path, node))
-                
-                files = files[t:]
-            t += 1
-        else:
-            update_dir(os.path.join(path, node), tree[node], files)
+        shutil.copy2(files[t], os.path.join(path, node.replace('md', 'html')))
+        t += 1
     
 
 def get_dir(path):

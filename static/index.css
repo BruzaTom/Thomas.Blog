@@ -20,9 +20,10 @@ h3,
 h4,
 h5,
 h6 {
-    color: #58a6ff;
+    color: #48cd94;
     margin-top: 24px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 h1 {
@@ -55,12 +56,13 @@ a:hover {
 ul,
 ol {
     padding-left: 20px;
+    display: inline-block;
 }
 
 code {
     background-color: #242424;
     border-radius: 6px;
-    color: #d2a8ff;
+    color: #d4ffa8;
     padding: 0.2em 0.4em;
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
 }
@@ -84,6 +86,7 @@ blockquote {
     padding-bottom: 0.5em;
     padding-right: 0.5em;
     color: #8b949e;
+    text-align: center;
 }
 
 img {

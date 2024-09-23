@@ -1,10 +1,11 @@
 # PROJECT DIRECTORY
 
-[Back Home](index.html)
+[HOME](index.html)
 
-Here is a list of my `project docs`.
+## `project docs`
 
-[PROJECT 1](index3.html)
+1. [PLANNER](index3.html)
+2. [ASTEROIDS](asteroids.html)
 
 > All that is gold does not glitter
 

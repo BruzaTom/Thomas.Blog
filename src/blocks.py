@@ -87,6 +87,7 @@ def strip(block):
         lines = block.split('\n')
         for i in range(0, len(lines)):
             lines[i] = f'<li>{lines[i]}</li>'
+            #print(lines[i],'\n')
         return '\n'.join(lines)
     if (block[:3] == '1. '):
         lines = block.split('\n')
@@ -107,10 +108,11 @@ def markdown_to_html_node(markdown):
     for i in range(0, len(blocks)):
         if blocktypes[i] != 'pre':
             blocks[i] = strip(blocks[i])
+        #print(blocks[i])       #debug 
         parentNodes.append(ParentNode(f'{blocktypes[i]}', text_to_children(blocks[i])))
     return ParentNode(tag='div', children=parentNodes)
 
 def getText(path):
     with open(path) as f:
-        file_contents = f.read() #f.read() turns book text into long string
+        file_contents = f.read() 
     return file_contents
