@@ -55,8 +55,9 @@ a:hover {
 
 ul,
 ol {
-    padding-left: 20px;
-    display: inline-block;
+    padding-left: 0px;
+    text-align: center;
+    list-style: none; /* Optional: removes bullet points */
 }
 
 code {
@@ -79,7 +80,7 @@ pre {
 
 blockquote {
     background-color: #242424;
-    border-left: 4px solid #30363d;
+    border-left: 6px solid #30363d;
     padding-left: 2em;
     margin-left: 0;
     padding-top: 0.5em;
