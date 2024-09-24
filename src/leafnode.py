@@ -16,14 +16,7 @@ class LeafNode(HTMLNode):
                 raise ValueError
             return f'<a{self.props_to_html()}>{self.value}</a>'
         if self.tag == 'img':
-            return f'<img{self.props_to_html()}>'
-        #use parent node for ul or ol
-        #if self.tag in 'ulol':
-        #    string = f'<{self.tag}>'
-        #    for prop in self.props:
-        #        string += f'<li>{self.props[prop]}</li>'
-        #    string += f'</{self.tag}>'
-        #    return string
+            return f'<img{self.props_to_html()}>' #original
         
 
         

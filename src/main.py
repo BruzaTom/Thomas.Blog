@@ -19,11 +19,7 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
     print(f'updating {dest_dir_path} with files in {dir_path_content} using {template_path}...')
     template = getText(template_path)
     content_tree = get_dir(dir_path_content)
-    #static_tree = get_dir('static')
-    #static_tree.update(content_tree)
-    #static_files = get_list('static')
     content_files = get_list(dir_path_content)
-    #static_files.extend(content_files)
     files = []
     for file in content_files:
         files.extend(file)
@@ -39,6 +35,11 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
         html_page = getText(template_path).replace('{{ Title }}', title)
         html_page = html_page.replace('{{ Content }}', htmlstring)
         html_page = html_page.replace('<li></li>', '') #bugg
+        #formats for css classes
+        css = 'header'
+        #html_page = html_page.replace('<div>', f'<div class="container">')#neon
+        #html_page = html_page.replace('<im>', '<h2 class="neon">')
+
         path = files[i].replace('md', 'html')
         md_to_html_path = path.replace(dir_path_content, dest_dir_path)
         print(f'\t\tupdating {md_to_html_path} with HTML generated from {files[i]}..')
