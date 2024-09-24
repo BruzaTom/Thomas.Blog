@@ -85,7 +85,7 @@ ol {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
-  gap: 0; /* Optional: Adds space between the lists */
+  gap: 10px; /* Optional: Adds space between the lists */
   max-width: 620px;
 
   margin-left: auto;
