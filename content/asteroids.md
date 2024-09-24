@@ -28,6 +28,12 @@
 
 > Short and sweet! The only requirements for the game are *pygame2.6.0*, with that the game will run great!
 
+## *constants.py*
+
+![constants](static/images/asteroids/constants.png)
+
+> If you have developed games before you probly understand the importance of constant variables. If not, the constant variables provide controle to testing the feel of the game and how it behaves. Rather than searching for every instance of player speed in the game, I can simply modify one variable.
+
 ## Class Files
 
 ## *circleshape.py*
@@ -35,3 +41,15 @@
 ![circlshape](static/images/asteroids/circleshape2.png)
 
 > The foundation of every object in the game is a circleshape. Acting as a hit box, north star for positioning, and in some cases the actual graphic.
+
+## *player.py*
+
+![player](static/images/asteroids/player2.png)
+
+> Here is the star of the show, the player! This class handles player positioning, inputs to control player, and a method to create shot objects. speaking of shots..
+
+![shots](static/images/asteroids/shots_gif.gif)
+
+## *shot.py*
+
+![shots](static/images/asteroids/shot.png)
