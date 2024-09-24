@@ -91,10 +91,14 @@ ol {
   margin-left: auto;
   margin-right: auto;
 }
-
 .list {
   list-style-type: none; /* Removes bullet points */
   padding: 0;
+}
+.abbreviate {
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  overflow: hidden; /* Hides the overflow text */
+  text-overflow: ellipsis; /* Adds '...' at the end of the text */
 }
 
 code {
