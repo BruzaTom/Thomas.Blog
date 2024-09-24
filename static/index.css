@@ -77,6 +77,7 @@ ol {
     padding-left: 0px;
     text-align: center;
     list-style: none; /* Optional: removes bullet points */
+    
 }
 
 code {
@@ -120,4 +121,35 @@ img {
 
     border: 2px solid #48cd934f;
     
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.link-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    
+}
+
+.link-list li {
+    border: 0px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-list img {
+    max-width: 100%;
+    height: auto;
 }
