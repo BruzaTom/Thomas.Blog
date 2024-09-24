@@ -134,8 +134,7 @@ img {
     flex-wrap: wrap;
     gap: 20px;
     padding: 0;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .link-list li {
@@ -143,6 +142,8 @@ img {
     padding: 10px;
     width: 200px;
     text-align: center;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #48cd94;
 }
 
 .link-list a {
