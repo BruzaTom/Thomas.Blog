@@ -4,8 +4,8 @@
 
 > Docs include images, videos, and diagrams of projects.
 
-1. [PLANNER](index3.html)
-2. [ASTEROIDS](asteroids.html)
-3. [STATIC SITE GENERATOR](ssg.html)
+* [PLANNER![planner](static/images/planner/planner.png)](index3.html)
+* [ASTEROIDS![ast](static/images/asteroids/asteroids.png)](asteroids.html)
+* [STATIC SITE GENERATOR](ssg.html)
 
 ![term.gif](static/images/gifs/terminal.gif)

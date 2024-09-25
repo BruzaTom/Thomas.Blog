@@ -1,8 +1,7 @@
 # Thomas' Projects
 
-[HOME](index.html)
-
-[PROJECT DIRECTORY](index2.html)
+- [HOME](index.html)
+- [PROJECTS](index2.html)
 
 ## Rpg Game
 

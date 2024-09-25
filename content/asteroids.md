@@ -1,22 +1,21 @@
 # Thomas' Projects
 
-[HOME](index.html)
-
-[PROJECT DIRECTORY](index2.html)
+- [HOME](index.html)
+- [PROJECTS](index2.html)
 
 ## Asteroids
 
 ![asteroids pic](static/images/asteroids/asteroids_gif.gif)
 
-> I know what your thinking.. *That game is simple and has been made many times over!* While that is true I used this project to experiment with the *Pygame* moduel and learned many things along the way. 
+> I know what your thinking.. _That game is simple and has been made many times over!_ While that is true I used this project to experiment with the _Pygame_ moduel and learned many things along the way.
 
 ## The Code
 
-## *Before graphics and controller*
+## _Before graphics and controller_
 
 ![bwasteroids](static/images/asteroids/bwasteroids_gif.gif)
 
-* This is the [REPO](https://github.com/BruzaTom/asteroids-) before graphics and controller inputs.
+- This is the [REPO](https://github.com/BruzaTom/asteroids-) before graphics and controller inputs.
 
 ![asteroids dir pic](static/images/asteroids/asteroids_dir.png)
 
@@ -26,7 +25,7 @@
 
 ![reqirements](static/images/asteroids/requirements.png)
 
-> Short and sweet! The only requirements for the game are *pygame2.6.0*, with that the game will run great!
+> Short and sweet! The only requirements for the game are _pygame2.6.0_, with that the game will run great!
 
 ## constants.py
 

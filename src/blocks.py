@@ -38,19 +38,22 @@ def block_to_block_type(block):
         lines = block.split('\n')
         for string in lines:
             if string[:2] != '* ':
-                return 'failed unordered list'
+                print('failed ul')
+                return 'ul'
         return 'ul'
     if (block[:2] == '- '):
         lines = block.split('\n')
         for string in lines:
             if string[:2] != '- ':
-                return 'failed unordered list'
+                print('failed ul')
+                return 'ul'
         return 'ul'
     if (block[:3] == '1. '):
         lines = block.split('\n')
         for t in range(0, len(lines)):
             if lines[t][:3] != f'{t+1}. ':
-                return 'failed ordered list'
+                print('failed ol')
+                return 'ol'
         return 'ol'
     return 'p'
 

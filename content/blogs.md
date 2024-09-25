@@ -1,10 +1,8 @@
 # Blogs
 
-[HOME](index.html)
-
-[PROJECT DIRECTORY](index2.html)
-
-[Support My Work](donate.html)
+- [HOME](index.html)
+- [PROJECTS](index2.html)
+- [Support My Work](donate.html)
 
 #### sep,22,2024
 

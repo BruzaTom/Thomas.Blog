@@ -34,11 +34,10 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
         htmlstring = html.to_html()
         html_page = getText(template_path).replace('{{ Title }}', title)
         html_page = html_page.replace('{{ Content }}', htmlstring)
-        html_page = html_page.replace('<li></li>', '') #bugg
+        html_page = html_page.replace('<li></li>', '')#bugg
+         
         #formats for css classes
-        css = 'header'
-        #html_page = html_page.replace('<div>', f'<div class="container">')#neon
-        #html_page = html_page.replace('<im>', '<h2 class="neon">')
+        html_page = use_nave(html_page)
 
         path = files[i].replace('md', 'html')
         md_to_html_path = path.replace(dir_path_content, dest_dir_path)
@@ -50,6 +49,16 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
             updateData(text, root_path)
         else:
             raise Exception(f'there is no path {root_path} in root...')
+
+def use_nave(script):
+    # finds a list of links and edits script to use nave
+    new = script.replace('<ol><li><a', '<nav class="navbar"><ol class="link-list"><li><a')
+    return new.replace('</a></li></ol>', '</a></li></ol></nav>')
+
+def use_nave(script):
+    # finds a list of links and edits script to use nave
+    new = script.replace('<ul><li><a', '<nav class="navbar"><ul class="link-list"><li><a')
+    return new.replace('</a></li></ul>', '</a></li></ul></nav>')
 
 def getText(path):
     with open(path) as f:
