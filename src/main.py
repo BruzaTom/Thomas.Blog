@@ -52,11 +52,6 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
 
 def use_nave(script):
     # finds a list of links and edits script to use nave
-    new = script.replace('<ol><li><a', '<nav class="navbar"><ol class="link-list"><li><a')
-    return new.replace('</a></li></ol>', '</a></li></ol></nav>')
-
-def use_nave(script):
-    # finds a list of links and edits script to use nave
     new = script.replace('<ul><li><a', '<nav class="navbar"><ul class="link-list"><li><a')
     return new.replace('</a></li></ul>', '</a></li></ul></nav>')
 
