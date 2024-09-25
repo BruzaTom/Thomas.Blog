@@ -9,6 +9,12 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+
+  background-image: url('images/GitHub-Symbol.png');
+  background-size: cover; /* Makes the image cover the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed in place */
 }
 .bgimage {
   background-image: url('images/wallpaper2.jpg');
@@ -162,9 +168,15 @@ pre code {
 }
 
 pre {
-  background-color: #242424;
-  border-radius: 6px;
-  padding: 0.2em 0.4em;
+  background-color: #242424a5;
+  border-radius: 14px;
+  white-space: pre-wrap; /* CSS3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  font-size: 16px; /* You can adjust the size as needed */
+  color: #48cd93c8;
 }
 
 blockquote {
