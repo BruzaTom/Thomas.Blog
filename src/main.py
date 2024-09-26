@@ -34,8 +34,8 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
         htmlstring = html.to_html()
         html_page = getText(template_path).replace('{{ Title }}', title)
         html_page = html_page.replace('{{ Content }}', htmlstring)
-        html_page = html_page.replace('<li></li>', '')#bugg
-         
+        html_page = html_page.replace('<li></li>', '</li>')#bugg
+        
         #formats for css classes
         html_page = use_nave(html_page)
 

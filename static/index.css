@@ -82,11 +82,13 @@ a::before {
   transition: transform 0.3s ease;
   transform: scaleX(0);
   transform-origin: bottom right;
+  border-radius: 50px;
 }
 
 a:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
+  border-radius: 50px;
 }
 
 ul,
@@ -143,7 +145,7 @@ ol {
 }
 
 .navbar li a {
-  border-radius: 14px;
+  border-radius: 50px;
   display: block;
   max-height: 20px;
   text-align: center;
@@ -224,6 +226,8 @@ img {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', Monaco,
     'Bitstream Vera Sans Mono', monospace;
   color: #58a6ff;
+
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
 }
 
 .link-list a {
@@ -232,6 +236,7 @@ img {
 }
 
 .link-list img {
-  max-width: 100%;
-  height: auto;
+  width: 200px;
+  height: 100px;
+  border-radius: 50px;
 }

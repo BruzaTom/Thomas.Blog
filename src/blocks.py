@@ -90,7 +90,6 @@ def strip(block):
         lines = block.split('\n')
         for i in range(0, len(lines)):
             lines[i] = f'<li>{lines[i]}</li>'
-            #print(lines[i],'\n')
         return '\n'.join(lines)
     if (block[:3] == '1. '):
         lines = block.split('\n')
