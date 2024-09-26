@@ -1,8 +1,13 @@
 # Blogs
 
-- [HOME](index.html)
-- [PROJECTS](index2.html)
-- [Support My Work](donate.html)
+* [HOME](index.html)
+* [PROJECTS](index2.html)
+* [Online Resources](resources.html)
+* [Support My Work](donate.html)
+
+#### sep,25,2024
+
+Added a resource section in blogs, aslo learning alot of css and configuring the website. Hope it looks good! I have to admit I got kind of hung up in the web dev of this site, its actually pretty fun! The generation of this site is still from my static site generator, I just personally edit the home and projects pages for css class use. Im implenting the class cases into my program to run completly from markdown. The nave buttons are already transfered over so thats how im automatically generating them on all the pages.
 
 #### sep,22,2024
 
