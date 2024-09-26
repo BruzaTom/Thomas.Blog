@@ -55,6 +55,16 @@
 
 ## main.py
 
-![cheering](static/images/asteroids/cheering.gif)
-
 ![main](static/images/asteroids/main.png)
+
+> The main file is ran to start the game, here we can see how the containers are filled with *Pygame* groups. In the game loop these groups iterate through each of there objects and preform various method calls. This was a very structured way to handle game logic and distinguish objects from each other. As you can see the asteroids are in action, lets check it out!
+
+## asteroids.py
+
+![asteroids](static/images/asteroids/asteroids_script2.png)
+
+> Here is the Asteroid class. The asteroid is simply drifting though space drawing its self at its new positions each loop and running its split method in the case it collides with a shot. Each asteroid is simply part of an asteroid field. Lets see how these asteroids exist winthin thate field object.
+
+## asteroid_field.py
+
+![field](static/images/asteroids/asteroid_field.png)
