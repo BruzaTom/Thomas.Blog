@@ -1,6 +1,7 @@
 # Blogs
 
 * [HOME](index.html)
+* [Contact Me](contact.html)
 * [PROJECTS](index2.html)
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
