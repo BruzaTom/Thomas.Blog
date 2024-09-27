@@ -6,11 +6,17 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
-#### sep,25,2024
+#### Sep-26-2024
+
+Today I decided to create a simulation in pygame called [Bouncing Balls.](balls.html) 
+
+I posted a [video on youtube](https://www.youtube.com/shorts/oyrKBz1t34o) that seems to be liked by many! Perhaps ill make more of these simulations.
+
+#### Sep,25,2024
 
 Added a resource section in blogs, aslo learning alot of css and configuring the website. Hope it looks good! I have to admit I got kind of hung up in the web dev of this site, its actually pretty fun! The generation of this site is still from my static site generator, I just personally edit the home and projects pages for css class use. Im implenting the class cases into my program to run completly from markdown. The nave buttons are already transfered over so thats how im automatically generating them on all the pages.
 
-#### sep,22,2024
+#### Sep,22,2024
 
 Wow check out this amazing interviw with Brian Kernighan and Lex Fridman! What insights into the industry.. [youtube](https://www.youtube.com/watch?v=G1-wse8nsxY&t=3s)
 
