@@ -1,6 +1,6 @@
 from PIL import Image
 
-path = 'static/images/meandautumn.jpg'
+path = 'static/images/gifs/thankyou.gif'
 # Open the original image
 original_image = Image.open(path)
 
@@ -14,7 +14,7 @@ if uinput == 'r':
     # Resize the image
     resized_image = original_image.resize((int(new_width), int(new_height)), Image.Resampling.LANCZOS)
     # Save the resized image
-    resized_image.save('static/images/meandautumn_rs.jpg')
+    resized_image.save('static/images/gifs/thankyou_rs.gif')
 if uinput == 'f':
     flipped_image = original_image.transpose(Image.FLIP_TOP_BOTTOM)
     # Save or display the flipped image

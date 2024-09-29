@@ -6,6 +6,14 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
+#### Sep-29-2024
+
+I have been working on the [ball simulator](balls.html), and am actually having a blast! I'm learning so much while finding and solving these problems. 
+
+People on [youtube](https://www.youtube.com/channel/UCow1BWPWc6YHN-E7I4D9XvA) seem to like the shorts I make demonstrating the different effects I create. I'm pretty satisfied with the response. Thank you everyone for the likes and subs! 
+
+![thankyou](static/images/gifs/thankyou.gif)
+
 #### Sep-26-2024
 
 Today I decided to create a simulation in pygame called [Bouncing Balls.](balls.html) 
