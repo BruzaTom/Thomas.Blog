@@ -5,4 +5,4 @@
 
 ## Bouncing Balls
 
-![balls gif](static/images/balls/balls_gif.gif)
+![balls gif](static/images/balls/ballsv2.gif)
