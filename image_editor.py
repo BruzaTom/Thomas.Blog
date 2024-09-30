@@ -1,24 +1,24 @@
 from PIL import Image
 
-path = 'static/images/gifs/thankyou.gif'
+path = 'static/images/ball_shooter/ball_shooter.png'
 # Open the original image
 original_image = Image.open(path)
 
 img_width, img_height = original_image.size
 # Define the new size
-new_width = img_width / 1.5  # 768 * 1.5 = 1152
-new_height = img_height / 1.5  # 768 * 1.5 = 1152
+new_width = img_width   # 768 * 1.5 = 1152
+new_height = img_width // 2  # 768 * 1.5 = 1152
 
 uinput = input('option: ')
 if uinput == 'r':
     # Resize the image
     resized_image = original_image.resize((int(new_width), int(new_height)), Image.Resampling.LANCZOS)
     # Save the resized image
-    resized_image.save('static/images/gifs/thankyou_rs.gif')
+    resized_image.save(path.replace(path[len(path)-4:], f'_rs{path[len(path)-4:]}'), format='PNG')
 if uinput == 'f':
     flipped_image = original_image.transpose(Image.FLIP_TOP_BOTTOM)
     # Save or display the flipped image
-    flipped_image.save('sprites/space_jet.png')
+    resized_image.save(path.replace(path[len(path)-4:], f'_f{path[len(path)-4:]}'), format='PNG')
     flipped_image.show()
 if uinput == 's':
     img_width, img_height = original_image.size

@@ -118,7 +118,7 @@ ol {
 }
 .scrollable {
   max-width: 400px; /* Set the width of the block */
-  max-height: 375px;/* quck fix could be more versitle depending on partner */
+  height: 375px; /* Set the height of the block */
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: auto; /* Enable vertical scrollbar */
   overflow-wrap: break-word; /* Alternative to word-wrap for better compatibility */

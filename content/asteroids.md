@@ -5,6 +5,8 @@
 
 ## Asteroids
 
+* [repo](https://github.com/BruzaTom/asteroids_with_graphics)
+
 ![asteroids pic](static/images/asteroids/asteroids_gif.gif)
 
 > I know what your thinking.. *That game is simple and has been made many times over!* While that is true I used this project to experiment with the *Pygame* moduel and learned many things along the way.

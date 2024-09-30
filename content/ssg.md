@@ -5,6 +5,8 @@
 
 ## Static Site Generator
 
+* [REPO](https://github.com/BruzaTom/static_site_generator)
+
 ![mirror dog](static/images/ssg/mirrordog_gif.gif)
 
 > Its pretty awesome isn’t it! Believe it or not the website your using is generated from one of my programs! Using *Python* I developed a static 

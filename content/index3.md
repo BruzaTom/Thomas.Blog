@@ -5,6 +5,8 @@
 
 ## The Planner
 
+* [REPO](https://github.com/BruzaTom/GUI_planner)
+
 ![planner pic](static/images/planner/planner_gif.gif)
 
 > The Planner is my version of never missing an appointment. Before coming back to programming I still had the organizational bug!
