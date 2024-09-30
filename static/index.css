@@ -102,7 +102,7 @@ ol {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
   gap: 10px; /* Optional: Adds space between the lists */
-  max-width: 620px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -117,16 +117,16 @@ ol {
   text-overflow: ellipsis; /* Adds '...' at the end of the text */
 }
 .scrollable {
-  max-width: 300px; /* Set the width of the block */
-  height: 300px; /* Set the height of the block */
+  max-width: 400px; /* Set the width of the block */
+  max-height: 375px;/* quck fix could be more versitle depending on partner */
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: auto; /* Enable vertical scrollbar */
   overflow-wrap: break-word; /* Alternative to word-wrap for better compatibility */
   scrollbar-color: #58a6ffb0 #48cd9338;
 }
 .single-scrollable {
-  max-width: 620px; /* Set the width of the block */
-  height: 150px; /* Set the height of the block */
+  max-width: 800px; /* Set the width of the block */
+  height: 300px; /* Set the height of the block */
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: auto; /* Enable vertical scrollbar */
   overflow-wrap: break-word; /* Alternative to word-wrap for better compatibility */
