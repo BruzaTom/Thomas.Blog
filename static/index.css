@@ -77,7 +77,7 @@ a::before {
   height: 100%;
   top: 0;
   left: 0;
-  background: #20513888;
+  background: #203d5188;
   z-index: -1;
   transition: transform 0.3s ease;
   transform: scaleX(0);
@@ -152,7 +152,7 @@ ol {
   padding: 10px 20px;
   text-decoration: none;
   width: 160px;
-  background-color: #48cd9322;
+  background-color: #48cd9332;
   box-shadow: 0px 0px 15px #48cd934f, 0px 0px 15px #48cd934f inset;
   border: 2px solid #48cd934f;
 }
