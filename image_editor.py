@@ -1,13 +1,13 @@
 from PIL import Image
 
-path = 'static/images/ball_shooter/ball_shooter.png'
+path = 'static/images/laptop_icon2.png'
 # Open the original image
 original_image = Image.open(path)
 
 img_width, img_height = original_image.size
 # Define the new size
-new_width = img_width   # 768 * 1.5 = 1152
-new_height = img_width // 2  # 768 * 1.5 = 1152
+new_width = img_width / 1.75# 768 * 1.5 = 1152
+new_height = img_height / 1.75  # 768 * 1.5 = 1152
 
 uinput = input('option: ')
 if uinput == 'r':

@@ -6,6 +6,14 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
+#### Oct-01-2024
+
+Well I've had my fun with the projects and website. Its time to get back learning more lessons from [boot.](https://www.boot.dev/) For now not gonna be posting too much on youtube, although I'm going to be working more on the docs for projects. 
+
+Feel free to reach out and [contact](contact.html) me.
+
+![jackolantern](static/images/gifs/jacko.gif)
+
 #### Sep-29-2024
 
 I have been working on the [ball simulator](balls.html), and am actually having a blast! I'm learning so much while finding and solving these problems. 
