@@ -1,0 +1,12 @@
+# Thomas' Projects
+
+- [HOME](index.html)
+- [PROJECTS](index2.html)
+
+## Recording Helper
+
+* [REPO](https://github.com/BruzaTom/recording_helper)
+
+![recoding helper](static/images/recording_helper/rc_options.png)
+
+> This program helps with managing a directory. If a '.mkv' file is added it will prompt the options delete, keep, or rename. I created this program to helop with managing my folder containing gameplay recording. Instead of opening my file explorer and navagiting to the folder then deciphering recordings from each other, I am simply prompted my desired actions. If I dont like the recording or it wasnt significant, I can choose delete. If somthing significant happened I can rename the file or simply keep it.
