@@ -23,6 +23,31 @@ body {
   background-position: center; /* Centers the image */
   background-attachment: fixed; /* Keeps the image fixed in place */
 }
+/* icon list*/
+.icon-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+
+.icon-list img {
+  box-shadow: none;
+  border: none;
+}
+
 
 b {
   font-weight: 900;
