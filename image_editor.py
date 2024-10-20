@@ -1,6 +1,6 @@
 from PIL import Image
 
-path = 'static/images/icons/lua icon.png'
+path = 'static/images/icons/linux icon.png'
 # Open the original image
 original_image = Image.open(path)
 
