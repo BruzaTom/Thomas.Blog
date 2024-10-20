@@ -6,6 +6,10 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
+#### Oct-20-2024
+
+A quick update, still doing my classes not as much as I would like but managing to stay consistent in my progress. I've been working a lot at my day job and finding some time here and there to work on the website. The docs on my programs not so much, although I did create a program called [Recordings Helper](recording_helper.html). I would say at this point the docs are lacking. That being said I do plan to finish them all completely.
+
 #### Oct-01-2024
 
 Well I've had my fun with the projects and website. Its time to get back learning more lessons from [boot.](https://www.boot.dev/) For now not gonna be posting too much on youtube, although I'm going to be working more on the docs for projects. 
