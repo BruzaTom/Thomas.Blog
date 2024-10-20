@@ -113,7 +113,7 @@ a::before {
   height: 100%;
   top: 0;
   left: 0;
-  background: #203d5188;
+  background: #0099ff;
   z-index: -1;
   transition: transform 0.3s ease;
   transform: scaleX(0);
@@ -237,8 +237,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 15px #48cd934f, 0px 0px 15px #48cd934f inset;
+
   border: 2px solid #48cd934f;
-  justify-content: center;
 }
 
 .center-container {
