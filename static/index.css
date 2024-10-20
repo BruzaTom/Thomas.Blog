@@ -113,7 +113,7 @@ a::before {
   height: 100%;
   top: 0;
   left: 0;
-  background: #0099ff;
+  background: #00080c;
   z-index: -1;
   transition: transform 0.3s ease;
   transform: scaleX(0);
