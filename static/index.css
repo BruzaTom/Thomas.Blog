@@ -10,7 +10,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url('images/laptop_icon2.png');
+  background-image: url('images/wallpaper.jpg');
   background-size: cover; /* Makes the image cover the entire element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image */
@@ -23,6 +23,17 @@ body {
   background-position: center; /* Centers the image */
   background-attachment: fixed; /* Keeps the image fixed in place */
 }
+
+article{
+  background-color: #0d1117d1;
+  border-radius: 50px;
+}
+
+div{
+  padding: 10px;
+}
+
+
 /* icon list*/
 .icon-list {
   display: flex;
@@ -204,6 +215,7 @@ pre {
   word-wrap: break-word; /* Internet Explorer 5.5+ */
   font-size: 16px; /* You can adjust the size as needed */
   color: #48cd93c8;
+  padding: 8px;
 }
 
 blockquote {
@@ -225,8 +237,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 15px #48cd934f, 0px 0px 15px #48cd934f inset;
-
   border: 2px solid #48cd934f;
+  justify-content: center;
 }
 
 .center-container {
