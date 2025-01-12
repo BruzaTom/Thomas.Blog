@@ -1,15 +1,15 @@
 from PIL import Image
 
-path = 'static/images/icons/vs icon.png'
+path = 'static/images/recording_helper/dosc.png'
 # Open the original image
 original_image = Image.open(path)
 
 img_width, img_height = original_image.size
 # Define the new size
-#new_width = img_width / 1.75# 768 * 1.5 = 1152
-#new_height = img_height / 1.75  # 768 * 1.5 = 1152
-new_width = 60
-new_height = 60
+new_width = img_width / 1.75# 768 * 1.5 = 1152
+new_height = img_height / 1.75  # 768 * 1.5 = 1152
+#new_width = 60
+#new_height = 60
 
 uinput = input('option: ')
 if uinput == 'r':
