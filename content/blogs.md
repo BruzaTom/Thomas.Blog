@@ -6,6 +6,12 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
+#### Jan-12-2025
+
+With the new year comes more progress, projects and challenges to overcome! I have been continuing my classes and learning so much since my last update. Today I added a [macro mouse recorder](ghost_mouse.html) to the projects list. I enjoy learning about and playing with new libraries inside of python, but I have to admit I want to learn more JavaScript for online applications. Instead of abandoning my current classes and jumping right in, ill just stay focused and finished what I started for now. So much to learn out there and I understand that I fall into rabbit holes of development in different languages or software, even cyber security subjects. Nevertheless ill choose a stable path to success. Next courses are heavily leaning towards JavaScript that being said. Hope Everyone had a great holiday season, now lets get back to work!
+
+![2025](static/images/gifs/2025.gif)
+
 #### Oct-20-2024
 
 A quick update, still doing my classes not as much as I would like but managing to stay consistent in my progress. I've been working a lot at my day job and finding some time here and there to work on the website. The docs on my programs not so much, although I did create a program called [Recordings Helper](recording_helper.html). I would say at this point the docs are lacking. That being said I do plan to finish them all completely.
