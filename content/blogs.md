@@ -6,7 +6,7 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
-#### Aug-2-2026
+#### Aug-2-2025
 
 “Inspiration exists, but it has to find you working.” – Pablo Picasso
 
