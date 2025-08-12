@@ -6,6 +6,20 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
+#### Aug-11-2025
+
+The End of an Era!
+
+I’ve recently been working on the GUI_planner, and I’ve added a recurring event key-value to the events. If an event is recurring daily, weekly, bi-weekly, monthly, or yearly—it now automatically recreates itself based on its associated value. This is great for bi-weekly paydays, birthdays, or even monthly bills.
+
+As of now, I’m content with the planner. I have another Python project that’s pretty far along, but it’s a much bigger undertaking. It deals with web sockets to gather real-time information from an online server. I’m actually on the lookout for my next interesting project, something that’ll teach me more. I’ve been thinking about doing some game dev, web dev, or maybe revisiting my old Unity project.
+
+Right now, I’m just enjoying the feeling of completion with the planner. It’s all one script and its respective data files, which store locally on the user’s PC. I started it back when I wasn’t thinking about modular scripts. I program so differently now compared to a year ago. I did my best to make the code modular with functions, but splitting it into separate scripts would’ve been nice. Maybe that’ll be a side project, un-noobing the planner!
+
+All that being said, the program works really well on Windows and Linux. You can clone the repo and simply run main.py and boom, your event handling becomes much more manageable.
+
+You can find the repo [here.](https://github.com/BruzaTom/GUI_planner)
+
 #### Aug-2-2025
 
 “Inspiration exists, but it has to find you working.” – Pablo Picasso
