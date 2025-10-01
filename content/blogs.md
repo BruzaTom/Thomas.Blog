@@ -6,6 +6,20 @@
 * [Online Resources](resources.html)
 * [Support My Work](donate.html)
 
+#### Sep-30-2025
+
+"Success is never owned, it’s rented—and the rent is due every day." — Rory Vaden
+
+Since my last blog Ive been working on a game dev project and I had a blast doing it! I devoloped a [framework](2d_plat_fw.html) for a 2D platformer using Pygame, which also includes a homemade tile map editor. I learned a lot from this project—not just about Python or Pygame, but also about rendering and the actual process of creating a game that performs well on the CPU rather than the GPU. It’s a pretty lightweight framework, and I like how it’s a low-level system that doesn’t rely on a game engine.
+
+![pygame](static/images/py_game/ninja_game.gif)
+
+While developing this framework, I realized that most of my projects over the past year have been in Python, which is fine with me—but I think it’s time to add some variety to my portfolio. I have many projects in the C language, but unfortunately, I can’t find the USB drive from my old college classes. It would be really cool to see all of those projects again, but alas, I’m coding in Python mainly these days.
+
+My new venture will focus on PHP and web applications! PHP 8.4.13 has been released, and for whatever reason, PHP keeps crossing paths with me in my research. I decided to buy a book called PHP Crash Course, and I’m going to go through and complete the lessons and assignments, which will of course be recorded in a GitHub repo.
+
+I have plenty of work to do! For anyone who comes across this have a great day!
+
 #### Aug-11-2025
 
 The End of an Era!
