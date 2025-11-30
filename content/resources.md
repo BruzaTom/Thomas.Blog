@@ -22,5 +22,5 @@
 * [Gif maker](https://ezgif.com/maker)
 * [Photopea](https://www.photopea.com/)
 * [.ico Converter](https://image.online-convert.com/convert-to-ico)
-* [Video to mp3](https://v2.youconvert.net/en/#:~:text=Download%20and%20convert%20YouTube%20videos%20to)
+* [Video to mp3](https://www.audiopod.ai/features/media-extractor)
 * [Artistic Qr Code](https://huggingface.co/spaces/huggingface-projects/QR-code-AI-art-generator#:~:text=QR%20Code%20AI%20Art%20Generator%20Blend%20QR%20codes)
